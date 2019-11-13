@@ -16,6 +16,17 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 .ba-hero {
     min-height: 100vh;
     height: 100%;
@@ -41,6 +52,12 @@ a {
 
 .ba-logo {
     margin-bottom: 93px;
+}
+
+.ba-logo svg {
+    width: 75px;
+    height: 75px;
+    fill: #fff;
 }
 
 .ba-hero__title {
@@ -221,11 +238,16 @@ a {
     padding-top: 114px; 
 }
 
-.ba-whatwedo img {
+.ba-whatwedo-list svg {
+    width: 85px;
+    height: 95px;
+}
+
+/* .ba-whatwedo img {
     width: 80px;
     height: 85px;
     max-width: 100%;
-}
+} */
 
 .ba-whatwedo__title {
     font-size: 1.125rem;
@@ -326,7 +348,6 @@ a {
 .ba-footer__info {
     font-size: .875rem;
 }
-
 
 
 
